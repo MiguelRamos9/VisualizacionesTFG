@@ -5,7 +5,7 @@ library(ranger)
 
 # Cargar modelo entrenado
 modelo_final_fit <- readRDS("C:/Users/Migue/OneDrive/Documentos/UC3M/TFG/modelo_final.rds")  # Guarda previamente tu modelo con saveRDS
-DatosMiguel <- DatosMiguel_sin_respuesta
+DatosMiguel <- DatosMiguel[-1]
 
 # Obtener nombres de variables de entrada
 feature_names <- names(DatosMiguel)
